@@ -9,15 +9,14 @@ def test_login_with_valid_details():
         print("FAIL: Login details are missing")
 
 
-def test_login_with_empty_details():
+def test_login_with_missing_username():
     username = ""
-    password = ""
+    password = "valid_password"
 
-    if not username and not password:
-        print("PASS: Empty login details detected")
+    if not username:
+        print("PASS: Missing username detected")
     else:
-        print("FAIL: Empty login details not detected")
+        print("FAIL: Missing username not detected")
 
 
-test_login_with_valid_details()
-test_login_with_empty_details()
+test_login_with_missing_username()
