@@ -14,3 +14,5 @@ including staging, committing, pushing, pulling, and viewing history.
 
 ## Author
 Shruti Patel
+
+Update: Added a test for login with a missing username.
